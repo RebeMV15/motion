@@ -1,13 +1,13 @@
 import React from 'react'
 
-const WeeklyPlanner: React.FC = () => {
+const GroupConfigurator: React.FC = () => {
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
   const timeSlots = ['7:00', '8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00']
 
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-gray-900">Weekly Planner</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Group Configurator</h2>
         <button className="btn btn-primary">
           Add Class
         </button>
@@ -42,4 +42,4 @@ const WeeklyPlanner: React.FC = () => {
   )
 }
 
-export default WeeklyPlanner 
+export default GroupConfigurator 

@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 
 // Lazy load components
 const DailySchedule = lazy(() => import('./pages/DailySchedule'))
-const WeeklyPlanner = lazy(() => import('./pages/WeeklyPlanner'))
+const GroupConfigurator = lazy(() => import('./pages/GroupConfigurator'))
 const UserManager = lazy(() => import('./pages/UserManager'))
 
 function App() {
@@ -18,15 +19,42 @@ function App() {
                   <h1 className="text-xl font-bold text-primary-600">Motion</h1>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  <a href="/" className="border-primary-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      `inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                        isActive
+                          ? 'border-primary-500 text-gray-900'
+                          : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      }`
+                    }
+                  >
                     Daily Schedule
-                  </a>
-                  <a href="/weekly" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                    Weekly Planner
-                  </a>
-                  <a href="/users" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  </NavLink>
+                  <NavLink
+                    to="/weekly"
+                    className={({ isActive }) =>
+                      `inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                        isActive
+                          ? 'border-primary-500 text-gray-900'
+                          : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      }`
+                    }
+                  >
+                    Group Configurator
+                  </NavLink>
+                  <NavLink
+                    to="/users"
+                    className={({ isActive }) =>
+                      `inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                        isActive
+                          ? 'border-primary-500 text-gray-900'
+                          : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      }`
+                    }
+                  >
                     User Manager
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -37,7 +65,7 @@ function App() {
           <Suspense fallback={<div className="text-center">Loading...</div>}>
             <Routes>
               <Route path="/" element={<DailySchedule />} />
-              <Route path="/weekly" element={<WeeklyPlanner />} />
+              <Route path="/weekly" element={<GroupConfigurator />} />
               <Route path="/users" element={<UserManager />} />
             </Routes>
           </Suspense>
