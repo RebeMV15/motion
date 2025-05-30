@@ -1,4 +1,5 @@
 import React, { useState, ReactElement } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 // Types for sessions
 type Session = {
@@ -27,6 +28,7 @@ const DailySchedule: React.FC = () => {
   const [selectedRoom, setSelectedRoom] = useState('Room 1')
   const [selectedDate, setSelectedDate] = useState(new Date())
   const rooms = ['Room 1', 'Room 2', 'Room 3', 'Studio 1', 'Studio 2']
+  const navigate = useNavigate()
 
   // Helper function to compare dates (ignoring time)
   const isSameDay = (date1: Date, date2: Date): boolean => {
@@ -848,7 +850,11 @@ const DailySchedule: React.FC = () => {
           <div className="h-24 border-b border-gray-200 flex items-center">
             {session ? (
               <div
-                className={`flex items-center w-full bg-white rounded shadow-sm pl-0 pr-4 py-2 ml-0 h-20 relative border-l-4 ${isFull ? 'border-red-500' : 'border-green-400'}`}
+                className={`flex items-center w-full bg-white rounded shadow-sm pl-0 pr-4 py-2 ml-0 h-20 relative border-l-4 ${isFull ? 'border-red-500' : 'border-green-400'} cursor-pointer`}
+                onClick={() => navigate(`/session/${session.id}`)}
+                role="button"
+                tabIndex={0}
+                onKeyPress={e => { if (e.key === 'Enter') navigate(`/session/${session.id}`); }}
               >
                 <img
                   src={session.trainerImg}

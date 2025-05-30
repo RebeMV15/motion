@@ -6,6 +6,7 @@ import { Suspense, lazy } from 'react'
 const DailySchedule = lazy(() => import('./pages/DailySchedule'))
 const GroupConfigurator = lazy(() => import('./pages/GroupConfigurator'))
 const UserManager = lazy(() => import('./pages/UserManager'))
+const SessionDetail = () => <div>Session Detail Page (to be implemented)</div>;
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
               <Route path="/" element={<DailySchedule />} />
               <Route path="/weekly" element={<GroupConfigurator />} />
               <Route path="/users" element={<UserManager />} />
+              <Route path="/session/:id" element={<SessionDetail />} />
             </Routes>
           </Suspense>
         </main>
