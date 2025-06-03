@@ -1,0 +1,29 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Room 1",
+      "capacity": 8
+    },
+    {
+      "id": 2,
+      "name": "Room 2",
+      "capacity": 8
+    },
+    {
+      "id": 3,
+      "name": "Room 3",
+      "capacity": 5
+    },
+    {
+      "id": 4,
+      "name": "Studio 1",
+      "capacity": 8
+    },
+    {
+      "id": 5,
+      "name": "Studio 2",
+      "capacity": 1
+    }
+  ]
+} 

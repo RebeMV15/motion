@@ -1,0 +1,29 @@
+{
+  "group_attendance": [
+    {
+      "id": 1,
+      "client_id": 1,
+      "group_id": 252
+    },
+    {
+      "id": 2,
+      "client_id": 1,
+      "group_id": 47
+    },
+    {
+      "id": 3,
+      "client_id": 2,
+      "group_id": 216
+    },
+    {
+      "id": 4,
+      "client_id": 2,
+      "group_id": 111
+    },
+    {
+      "id": 5,
+      "client_id": 2,
+      "group_id": 139
+    }
+  ]
+} 
