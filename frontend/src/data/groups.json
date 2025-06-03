@@ -1,0 +1,193 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "weekday": "Monday",
+      "time": "08:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 2,
+      "weekday": "Monday",
+      "time": "09:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 3,
+      "weekday": "Monday",
+      "time": "10:00:00",
+      "room_id": 1,
+      "type_of_group": 2,
+      "level": 2,
+      "capacity": 8
+    },
+    {
+      "id": 4,
+      "weekday": "Monday",
+      "time": "11:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 3,
+      "capacity": 8
+    },
+    {
+      "id": 5,
+      "weekday": "Monday",
+      "time": "12:00:00",
+      "room_id": 1,
+      "type_of_group": 2,
+      "level": 3,
+      "capacity": 8
+    },
+    {
+      "id": 6,
+      "weekday": "Monday",
+      "time": "13:00:00",
+      "room_id": 1,
+      "type_of_group": 2,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 7,
+      "weekday": "Monday",
+      "time": "14:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 2,
+      "capacity": 8
+    },
+    {
+      "id": 8,
+      "weekday": "Monday",
+      "time": "15:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 3,
+      "capacity": 8
+    },
+    {
+      "id": 9,
+      "weekday": "Monday",
+      "time": "16:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 2,
+      "capacity": 8
+    },
+    {
+      "id": 10,
+      "weekday": "Monday",
+      "time": "17:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 11,
+      "weekday": "Monday",
+      "time": "18:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 3,
+      "capacity": 8
+    },
+    {
+      "id": 12,
+      "weekday": "Monday",
+      "time": "19:00:00",
+      "room_id": 1,
+      "type_of_group": 2,
+      "level": 3,
+      "capacity": 8
+    },
+    {
+      "id": 13,
+      "weekday": "Monday",
+      "time": "20:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 2,
+      "capacity": 8
+    },
+    {
+      "id": 14,
+      "weekday": "Monday",
+      "time": "21:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 15,
+      "weekday": "Monday",
+      "time": "22:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 16,
+      "weekday": "Tuesday",
+      "time": "08:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 17,
+      "weekday": "Tuesday",
+      "time": "09:00:00",
+      "room_id": 1,
+      "type_of_group": 2,
+      "level": 2,
+      "capacity": 8
+    },
+    {
+      "id": 18,
+      "weekday": "Tuesday",
+      "time": "10:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 3,
+      "capacity": 8
+    },
+    {
+      "id": 19,
+      "weekday": "Tuesday",
+      "time": "11:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 1,
+      "capacity": 8
+    },
+    {
+      "id": 20,
+      "weekday": "Tuesday",
+      "time": "12:00:00",
+      "room_id": 1,
+      "type_of_group": 1,
+      "level": 2,
+      "capacity": 8
+    },
+    {
+      "id": 345,
+      "weekday": "Wednesday",
+      "time": "22:00:00",
+      "room_id": 3,
+      "type_of_group": 3,
+      "level": 1,
+      "capacity": 3
+    }
+  ]
+} 
