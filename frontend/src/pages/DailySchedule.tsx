@@ -1,5 +1,8 @@
 import React, { useState, ReactElement } from 'react'
 import { useNavigate } from 'react-router-dom'
+import sessionsData from '../data/sessions.json';
+import groupAttendanceData from '../data/group_attendance.json';
+import typeOfGroupsData from '../data/type_of_groups.json';
 
 // Types for sessions
 type Session = {
@@ -27,7 +30,7 @@ const trainerImages: Record<string, string> = {
 const DailySchedule: React.FC = () => {
   const [selectedRoom, setSelectedRoom] = useState('Room 1')
   const [selectedDate, setSelectedDate] = useState(new Date())
-  const rooms = ['Room 1', 'Room 2', 'Room 3', 'Studio 1', 'Studio 2']
+  const rooms = ['Room 1', 'Room 2']
   const navigate = useNavigate()
 
   // Helper function to compare dates (ignoring time)
@@ -37,717 +40,47 @@ const DailySchedule: React.FC = () => {
            date1.getDate() === date2.getDate()
   }
 
-  function getRandomLevel() {
-    return (Math.floor(Math.random() * 3) + 1) as 1 | 2 | 3;
-  }
-
-  function getRandomCapacity() {
-    const capacities = [1, 5, 8];
-    return capacities[Math.floor(Math.random() * capacities.length)];
-  }
-
-  function getRandomAttendees(capacity: number) {
-    return Math.floor(Math.random() * capacity) + 1;
-  }
-
-  // Mock sessions data
-  const mockSessions: Session[] = [
-    // Sunday (May 18)
-    {
-      id: '1',
-      title: 'Morning Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 8,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 18),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '2',
-      title: 'Pilates Basics',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 9,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 18),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '3',
-      title: 'HIIT Training',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 10,
-      duration: 1.5,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 18),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Monday (May 19)
-    {
-      id: '4',
-      title: 'Zumba',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 14,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 19),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '5',
-      title: 'Boxing Class',
-      trainer: 'Alex Brown',
-      trainerImg: trainerImages['Alex Brown'],
-      startTime: 15,
-      duration: 1,
-      room: 'Studio 2',
-      date: new Date(2025, 4, 19),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Tuesday (May 20)
-    {
-      id: '6',
-      title: 'Power Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 9,
-      duration: 1.5,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 20),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '7',
-      title: 'CrossFit',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 11,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 20),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Wednesday (May 21)
-    {
-      id: '8',
-      title: 'Yoga Flow',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 8,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 21),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '9',
-      title: 'Pilates Advanced',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 10,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 21),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Thursday (May 22)
-    {
-      id: '10',
-      title: 'Morning HIIT',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 8,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 22),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '11',
-      title: 'Yoga Stretch',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 11,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 22),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Friday (May 23)
-    {
-      id: '12',
-      title: 'Pilates Flow',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 9,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 23),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '13',
-      title: 'Zumba Party',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 12,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 23),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Saturday (May 24)
-    {
-      id: '14',
-      title: 'Weekend Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 9,
-      duration: 1.5,
-      room: 'Room 1',
-      date: new Date(2025, 4, 24),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '15',
-      title: 'Boxing Skills',
-      trainer: 'Alex Brown',
-      trainerImg: trainerImages['Alex Brown'],
-      startTime: 11,
-      duration: 1,
-      room: 'Studio 2',
-      date: new Date(2025, 4, 24),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Sunday (May 25)
-    {
-      id: '16',
-      title: 'Meditation',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 10,
-      duration: 1,
-      room: 'Room 3',
-      date: new Date(2025, 4, 25),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '17',
-      title: 'Dance Fitness',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 14,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 25),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Monday (May 26)
-    {
-      id: '18',
-      title: 'HIIT Training',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 9,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 26),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '19',
-      title: 'Pilates Basics',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 11,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 26),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Tuesday (May 27)
-    {
-      id: '20',
-      title: 'Yoga Flow',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 8,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 27),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '21',
-      title: 'CrossFit',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 15,
-      duration: 1.5,
-      room: 'Studio 2',
-      date: new Date(2025, 4, 27),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Wednesday (May 28)
-    {
-      id: '22',
-      title: 'Zumba',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 10,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 28),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '23',
-      title: 'Boxing Class',
-      trainer: 'Alex Brown',
-      trainerImg: trainerImages['Alex Brown'],
-      startTime: 14,
-      duration: 1,
-      room: 'Studio 2',
-      date: new Date(2025, 4, 28),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Thursday (May 29)
-    {
-      id: '24',
-      title: 'Power Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 9,
-      duration: 1.5,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 29),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '25',
-      title: 'Pilates Advanced',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 11,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 29),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Friday (May 30)
-    {
-      id: '26',
-      title: 'Morning HIIT',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 8,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 30),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '27',
-      title: 'Yoga Stretch',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 12,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 4, 30),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Saturday (May 31)
-    {
-      id: '28',
-      title: 'Weekend Pilates',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 9,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 4, 31),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '29',
-      title: 'Zumba Party',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 11,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 4, 31),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Sunday (June 1)
-    {
-      id: '30',
-      title: 'Morning Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 8,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 5, 1),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '31',
-      title: 'Meditation',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 10,
-      duration: 1,
-      room: 'Room 3',
-      date: new Date(2025, 5, 1),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Monday (June 2)
-    {
-      id: '32',
-      title: 'HIIT Training',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 9,
-      duration: 1.5,
-      room: 'Studio 1',
-      date: new Date(2025, 5, 2),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '33',
-      title: 'Boxing Skills',
-      trainer: 'Alex Brown',
-      trainerImg: trainerImages['Alex Brown'],
-      startTime: 14,
-      duration: 1,
-      room: 'Studio 2',
-      date: new Date(2025, 5, 2),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Tuesday (June 3)
-    {
-      id: '34',
-      title: 'Yoga Flow',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 8,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 5, 3),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '35',
-      title: 'Pilates Basics',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 11,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 5, 3),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Wednesday (June 4)
-    {
-      id: '36',
-      title: 'CrossFit',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 10,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 5, 4),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '37',
-      title: 'Dance Fitness',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 15,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 5, 4),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Thursday (June 5)
-    {
-      id: '38',
-      title: 'Power Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 9,
-      duration: 1.5,
-      room: 'Studio 1',
-      date: new Date(2025, 5, 5),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '39',
-      title: 'Boxing Class',
-      trainer: 'Alex Brown',
-      trainerImg: trainerImages['Alex Brown'],
-      startTime: 14,
-      duration: 1,
-      room: 'Studio 2',
-      date: new Date(2025, 5, 5),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Friday (June 6)
-    {
-      id: '40',
-      title: 'Pilates Advanced',
-      trainer: 'Jane Smith',
-      trainerImg: trainerImages['Jane Smith'],
-      startTime: 10,
-      duration: 1,
-      room: 'Room 2',
-      date: new Date(2025, 5, 6),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '41',
-      title: 'Zumba',
-      trainer: 'Sarah Wilson',
-      trainerImg: trainerImages['Sarah Wilson'],
-      startTime: 12,
-      duration: 1,
-      room: 'Room 1',
-      date: new Date(2025, 5, 6),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-
-    // Saturday (June 7)
-    {
-      id: '42',
-      title: 'Weekend Yoga',
-      trainer: 'John Doe',
-      trainerImg: trainerImages['John Doe'],
-      startTime: 9,
-      duration: 1.5,
-      room: 'Room 1',
-      date: new Date(2025, 5, 7),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    },
-    {
-      id: '43',
-      title: 'HIIT Training',
-      trainer: 'Mike Johnson',
-      trainerImg: trainerImages['Mike Johnson'],
-      startTime: 11,
-      duration: 1,
-      room: 'Studio 1',
-      date: new Date(2025, 5, 7),
-      level: getRandomLevel(),
-      get capacity() { return this._capacity || (this._capacity = getRandomCapacity()); },
-      get attendees() { return this._attendees || (this._attendees = getRandomAttendees(this.capacity)); },
-      _capacity: undefined as number | undefined,
-      _attendees: undefined as number | undefined
-    }
-  ].map(session => {
-    // For TypeScript, convert to plain object with resolved values
-    const capacity = getRandomCapacity();
-    const attendees = getRandomAttendees(capacity);
-    return { ...session, capacity, attendees };
+  // Helper: Map type_of_group id to capacity
+  const typeOfGroupCapacity: Record<number, number> = {};
+  typeOfGroupsData.type_of_groups.forEach((type: any) => {
+    typeOfGroupCapacity[type.id] = type.capacity;
   });
+
+  // Helper: Map group_id to number of clients
+  const groupAttendanceCount: Record<number, number> = {};
+  groupAttendanceData.group_attendance.forEach((entry: any) => {
+    if (!groupAttendanceCount[entry.group_id]) groupAttendanceCount[entry.group_id] = 0;
+    groupAttendanceCount[entry.group_id]++;
+  });
+
+  // Convert sessions.json data to Session[]
+  const parseSessions = () => {
+    return sessionsData.sessions.map((session: any) => {
+      const dateObj = new Date(session.date);
+      const startTime = parseInt(session.time.split(':')[0], 10);
+      const groupId = session.group.id;
+      const typeOfGroupId = session.group.type_of_group;
+      return {
+        id: session.id,
+        title: `Group ${groupId}`,
+        trainer: '',
+        trainerImg: '',
+        startTime,
+        duration: 1,
+        room: session.room.name,
+        date: dateObj,
+        level: session.group.level,
+        capacity: typeOfGroupCapacity[typeOfGroupId] ?? 0,
+        attendees: groupAttendanceCount[groupId] ?? 0
+      };
+    });
+  };
+
+  const sessions = parseSessions();
 
   // Function to get sessions for the selected room and time
   const getSessionForTime = (hour: number): Session | undefined => {
-    return mockSessions.find(session => 
+    return sessions.find(session => 
       session.room === selectedRoom && 
       session.startTime === hour &&
       isSameDay(session.date, selectedDate)
@@ -756,7 +89,7 @@ const DailySchedule: React.FC = () => {
 
   // Function to get the session that spans this time slot
   const getSessionForTimeSlot = (hour: number, isFirstHalf: boolean): Session | undefined => {
-    return mockSessions.find(session => 
+    return sessions.find(session => 
       session.room === selectedRoom && 
       isSameDay(session.date, selectedDate) &&
       (session.startTime === hour || 
@@ -826,7 +159,7 @@ const DailySchedule: React.FC = () => {
   const generateTimeSlots = (): ReactElement[] => {
     const slots: ReactElement[] = []
     for (let hour = 8; hour <= 22; hour++) {
-      const session = mockSessions.find(session =>
+      const session = sessions.find(session =>
         session.room === selectedRoom &&
         isSameDay(session.date, selectedDate) &&
         (session.startTime === hour || (session.startTime < hour && session.startTime + session.duration > hour))

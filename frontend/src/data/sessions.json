@@ -222,6 +222,227 @@
       }
     },
     {
+      "id": "2025-06-02-2-08:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 76,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-09:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 77,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-10:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 78,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-11:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 79,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-12:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 80,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-13:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 81,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-14:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 82,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-17:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 85,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-18:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 86,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-19:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 87,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-20:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 88,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-21:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 89,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-02-2-22:00:00",
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 90,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
       "id": "2025-06-03-1-08:00:00",
       "date": "2025-06-03",
       "weekday": "Tuesday",
@@ -307,20 +528,1686 @@
       }
     },
     {
-      "id": "2025-06-04-3-22:00:00",
+      "id": "2025-06-03-1-13:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 21,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-14:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 22,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-17:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 25,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-18:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 26,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-19:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 27,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-20:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 28,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-21:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 29,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-1-22:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 30,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-08:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 91,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-09:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 92,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-10:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 93,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-11:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 94,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-12:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 95,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-13:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 96,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-14:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 97,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-17:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 100,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-18:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 101,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-19:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 102,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-20:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 103,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-21:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 104,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-03-2-22:00:00",
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 105,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-08:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 31,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-09:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 32,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-10:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 33,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-11:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 34,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-12:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 35,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-13:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 36,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-14:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 37,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-17:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 40,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-18:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 41,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-19:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 42,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-20:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 43,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-21:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 44,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-1-22:00:00",
       "date": "2025-06-04",
       "weekday": "Wednesday",
       "time": "22:00:00",
       "room": {
-        "id": 3,
-        "name": "Room 3",
-        "capacity": 5
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
       },
       "group": {
-        "id": 345,
-        "type_of_group": 3,
+        "id": 45,
+        "type_of_group": 1,
         "level": 1,
-        "capacity": 3
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-08:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 106,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-09:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 107,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-10:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 108,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-11:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 109,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-12:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 110,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-13:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 111,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-14:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 112,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-17:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 115,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-18:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 116,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-19:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 117,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-20:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 118,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-21:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 119,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-04-2-22:00:00",
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 120,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-08:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 46,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-09:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 47,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-10:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 48,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-11:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 49,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-12:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 50,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-13:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 51,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-14:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 52,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-17:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 55,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-18:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 56,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-19:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 57,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-20:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 58,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-21:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 59,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-1-22:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 60,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-08:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 121,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-09:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 122,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-10:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 123,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-11:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 124,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-12:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 125,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-13:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 126,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-14:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 127,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-17:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 130,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-18:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 131,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-19:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 132,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-20:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 133,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-21:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 134,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-05-2-22:00:00",
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 135,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-08:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 61,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-09:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 62,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-10:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 63,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-11:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 64,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-12:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 65,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-13:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 66,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-14:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 67,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-17:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 70,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-18:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 71,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-19:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 72,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-20:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 73,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-21:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 74,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-1-22:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 75,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-08:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 136,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-09:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 137,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-10:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 138,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-11:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 139,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-12:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 140,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-13:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 141,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-14:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 142,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-17:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 145,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-18:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 146,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-19:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 147,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-20:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 148,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-21:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 149,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-06-2-22:00:00",
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 150,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
       }
     },
     {
@@ -545,6 +2432,227 @@
       }
     },
     {
+      "id": "2025-06-09-2-08:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 76,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-09:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 77,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-10:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 78,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-11:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 79,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-12:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 80,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-13:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 81,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-14:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 82,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-17:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 85,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-18:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 86,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-19:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 87,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-20:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 88,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-21:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 89,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-09-2-22:00:00",
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 90,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
       "id": "2025-06-10-1-08:00:00",
       "date": "2025-06-10",
       "weekday": "Tuesday",
@@ -630,20 +2738,1686 @@
       }
     },
     {
-      "id": "2025-06-11-3-22:00:00",
+      "id": "2025-06-10-1-13:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 21,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-14:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 22,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-17:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 25,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-18:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 26,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-19:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 27,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-20:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 28,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-21:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 29,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-1-22:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 30,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-08:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 91,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-09:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 92,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-10:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 93,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-11:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 94,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-12:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 95,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-13:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 96,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-14:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 97,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-17:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 100,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-18:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 101,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-19:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 102,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-20:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 103,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-21:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 104,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-10-2-22:00:00",
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 105,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-08:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 31,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-09:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 32,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-10:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 33,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-11:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 34,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-12:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 35,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-13:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 36,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-14:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 37,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-17:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 40,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-18:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 41,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-19:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 42,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-20:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 43,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-21:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 44,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-1-22:00:00",
       "date": "2025-06-11",
       "weekday": "Wednesday",
       "time": "22:00:00",
       "room": {
-        "id": 3,
-        "name": "Room 3",
-        "capacity": 5
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
       },
       "group": {
-        "id": 345,
-        "type_of_group": 3,
+        "id": 45,
+        "type_of_group": 1,
         "level": 1,
-        "capacity": 3
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-08:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 106,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-09:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 107,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-10:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 108,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-11:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 109,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-12:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 110,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-13:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 111,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-14:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 112,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-17:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 115,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-18:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 116,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-19:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 117,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-20:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 118,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-21:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 119,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-11-2-22:00:00",
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 120,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-08:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 46,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-09:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 47,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-10:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 48,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-11:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 49,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-12:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 50,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-13:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 51,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-14:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 52,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-17:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 55,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-18:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 56,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-19:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 57,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-20:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 58,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-21:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 59,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-1-22:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 60,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-08:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 121,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-09:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 122,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-10:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 123,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-11:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 124,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-12:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 125,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-13:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 126,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-14:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 127,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-17:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 130,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-18:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 131,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-19:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 132,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-20:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 133,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-21:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 134,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-12-2-22:00:00",
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 135,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-08:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 61,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-09:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 62,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-10:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 63,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-11:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 64,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-12:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 65,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-13:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 66,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-14:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 67,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-17:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 70,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-18:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 71,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-19:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 72,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-20:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 73,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-21:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 74,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-1-22:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 75,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-08:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 136,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-09:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 137,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-10:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 138,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-11:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 139,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-12:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 140,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-13:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 141,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-14:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 142,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-17:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 145,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-18:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 146,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-19:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 147,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-20:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 148,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-21:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 149,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-13-2-22:00:00",
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 150,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
       }
     },
     {
@@ -868,6 +4642,227 @@
       }
     },
     {
+      "id": "2025-06-16-2-08:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 76,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-09:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 77,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-10:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 78,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-11:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 79,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-12:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 80,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-13:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 81,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-14:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 82,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-17:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 85,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-18:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 86,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-19:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 87,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-20:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 88,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-21:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 89,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-16-2-22:00:00",
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 90,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
       "id": "2025-06-17-1-08:00:00",
       "date": "2025-06-17",
       "weekday": "Tuesday",
@@ -953,20 +4948,1686 @@
       }
     },
     {
-      "id": "2025-06-18-3-22:00:00",
+      "id": "2025-06-17-1-13:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 21,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-14:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 22,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-17:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 25,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-18:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 26,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-19:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 27,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-20:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 28,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-21:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 29,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-1-22:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 30,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-08:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 91,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-09:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 92,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-10:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 93,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-11:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 94,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-12:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 95,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-13:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 96,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-14:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 97,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-17:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 100,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-18:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 101,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-19:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 102,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-20:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 103,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-21:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 104,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-17-2-22:00:00",
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 105,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-08:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 31,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-09:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 32,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-10:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 33,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-11:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 34,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-12:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 35,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-13:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 36,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-14:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 37,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-17:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 40,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-18:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 41,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-19:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 42,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-20:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 43,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-21:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 44,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-1-22:00:00",
       "date": "2025-06-18",
       "weekday": "Wednesday",
       "time": "22:00:00",
       "room": {
-        "id": 3,
-        "name": "Room 3",
-        "capacity": 5
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
       },
       "group": {
-        "id": 345,
-        "type_of_group": 3,
+        "id": 45,
+        "type_of_group": 1,
         "level": 1,
-        "capacity": 3
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-08:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 106,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-09:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 107,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-10:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 108,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-11:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 109,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-12:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 110,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-13:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 111,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-14:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 112,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-17:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 115,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-18:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 116,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-19:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 117,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-20:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 118,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-21:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 119,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-18-2-22:00:00",
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 120,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-08:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 46,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-09:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 47,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-10:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 48,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-11:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 49,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-12:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 50,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-13:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 51,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-14:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 52,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-17:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 55,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-18:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 56,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-19:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 57,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-20:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 58,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-21:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 59,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-1-22:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 60,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-08:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 121,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-09:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 122,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-10:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 123,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-11:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 124,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-12:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 125,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-13:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 126,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-14:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 127,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-17:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 130,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-18:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 131,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-19:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 132,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-20:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 133,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-21:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 134,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-19-2-22:00:00",
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 135,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-08:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 61,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-09:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 62,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-10:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 63,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-11:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 64,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-12:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 65,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-13:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 66,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-14:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 67,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-17:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 70,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-18:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 71,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-19:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 72,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-20:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 73,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-21:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 74,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-1-22:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 75,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-08:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 136,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-09:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 137,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-10:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 138,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-11:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 139,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-12:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 140,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-13:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 141,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-14:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 142,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-17:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 145,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-18:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 146,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-19:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 147,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-20:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 148,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-21:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 149,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-20-2-22:00:00",
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 150,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
       }
     },
     {
@@ -1191,6 +6852,227 @@
       }
     },
     {
+      "id": "2025-06-23-2-08:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 76,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-09:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 77,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-10:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 78,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-11:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 79,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-12:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 80,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-13:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 81,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-14:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 82,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-17:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 85,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-18:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 86,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-19:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 87,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-20:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 88,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-21:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 89,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-23-2-22:00:00",
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 90,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
       "id": "2025-06-24-1-08:00:00",
       "date": "2025-06-24",
       "weekday": "Tuesday",
@@ -1276,20 +7158,1686 @@
       }
     },
     {
-      "id": "2025-06-25-3-22:00:00",
+      "id": "2025-06-24-1-13:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 21,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-14:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 22,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-17:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 25,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-18:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 26,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-19:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 27,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-20:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 28,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-21:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 29,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-1-22:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 30,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-08:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 91,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-09:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 92,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-10:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 93,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-11:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 94,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-12:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 95,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-13:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 96,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-14:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 97,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-17:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 100,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-18:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 101,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-19:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 102,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-20:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 103,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-21:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 104,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-24-2-22:00:00",
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 105,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-08:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 31,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-09:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 32,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-10:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 33,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-11:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 34,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-12:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 35,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-13:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 36,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-14:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 37,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-17:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 40,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-18:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 41,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-19:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 42,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-20:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 43,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-21:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 44,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-1-22:00:00",
       "date": "2025-06-25",
       "weekday": "Wednesday",
       "time": "22:00:00",
       "room": {
-        "id": 3,
-        "name": "Room 3",
-        "capacity": 5
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
       },
       "group": {
-        "id": 345,
-        "type_of_group": 3,
+        "id": 45,
+        "type_of_group": 1,
         "level": 1,
-        "capacity": 3
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-08:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 106,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-09:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 107,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-10:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 108,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-11:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 109,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-12:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 110,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-13:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 111,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-14:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 112,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-17:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 115,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-18:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 116,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-19:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 117,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-20:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 118,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-21:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 119,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-25-2-22:00:00",
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 120,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-08:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 46,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-09:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 47,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-10:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 48,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-11:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 49,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-12:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 50,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-13:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 51,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-14:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 52,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-17:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 55,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-18:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 56,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-19:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 57,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-20:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 58,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-21:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 59,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-1-22:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 60,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-08:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 121,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-09:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 122,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-10:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 123,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-11:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 124,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-12:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 125,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-13:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 126,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-14:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 127,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-17:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 130,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-18:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 131,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-19:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 132,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-20:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 133,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-21:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 134,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-26-2-22:00:00",
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 135,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-08:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 61,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-09:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 62,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-10:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 63,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-11:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 64,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-12:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 65,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-13:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 66,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-14:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 67,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-17:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 70,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-18:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 71,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-19:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 72,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-20:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 73,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-21:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 74,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-1-22:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 1,
+        "name": "Room 1",
+        "capacity": 8
+      },
+      "group": {
+        "id": 75,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-08:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 136,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-09:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 137,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-10:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 138,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-11:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 139,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-12:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 140,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-13:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 141,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-14:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 142,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-17:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 145,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-18:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 146,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-19:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 147,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-20:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 148,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-21:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 149,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-27-2-22:00:00",
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 150,
+        "type_of_group": 2,
+        "level": 2,
+        "capacity": 8
       }
     },
     {
@@ -1510,6 +9058,227 @@
         "id": 15,
         "type_of_group": 1,
         "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-08:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "08:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 76,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-09:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "09:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 77,
+        "type_of_group": 2,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-10:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "10:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 78,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-11:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "11:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 79,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-12:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "12:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 80,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-13:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "13:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 81,
+        "type_of_group": 1,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-14:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "14:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 82,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-17:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "17:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 85,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-18:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "18:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 86,
+        "type_of_group": 1,
+        "level": 3,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-19:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "19:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 87,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-20:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "20:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 88,
+        "type_of_group": 2,
+        "level": 1,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-21:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "21:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 89,
+        "type_of_group": 1,
+        "level": 2,
+        "capacity": 8
+      }
+    },
+    {
+      "id": "2025-06-30-2-22:00:00",
+      "date": "2025-06-30",
+      "weekday": "Monday",
+      "time": "22:00:00",
+      "room": {
+        "id": 2,
+        "name": "Room 2",
+        "capacity": 8
+      },
+      "group": {
+        "id": 90,
+        "type_of_group": 1,
+        "level": 2,
         "capacity": 8
       }
     }
