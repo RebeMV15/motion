@@ -6,36 +6,40 @@ const GroupConfigurator: React.FC = () => {
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <h2 className="text-2xl font-bold text-gray-900">Group Configurator</h2>
-        <button className="btn btn-primary">
+        <button className="w-full sm:w-auto btn btn-primary">
           Add Class
         </button>
       </div>
 
       <div className="bg-white shadow rounded-lg overflow-hidden">
-        <div className="grid grid-cols-8 border-b">
-          <div className="p-2 text-sm font-medium text-gray-500">Time</div>
-          {days.map(day => (
-            <div key={day} className="p-2 text-sm font-medium text-gray-500 border-l">
-              {day}
-            </div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-8">
-          {timeSlots.map(time => (
-            <React.Fragment key={time}>
-              <div className="p-2 text-sm text-gray-500 border-b">
-                {time}
-              </div>
+        <div className="overflow-x-auto">
+          <div className="min-w-[800px]">
+            <div className="grid grid-cols-8 border-b">
+              <div className="p-2 text-sm font-medium text-gray-500">Time</div>
               {days.map(day => (
-                <div key={`${day}-${time}`} className="p-2 border-l border-b min-h-[60px]">
-                  {/* Placeholder for class slots */}
+                <div key={day} className="p-2 text-sm font-medium text-gray-500 border-l">
+                  {day}
                 </div>
               ))}
-            </React.Fragment>
-          ))}
+            </div>
+
+            <div className="grid grid-cols-8">
+              {timeSlots.map(time => (
+                <React.Fragment key={time}>
+                  <div className="p-2 text-sm text-gray-500 border-b">
+                    {time}
+                  </div>
+                  {days.map(day => (
+                    <div key={`${day}-${time}`} className="p-2 border-l border-b min-h-[60px]">
+                      {/* Placeholder for class slots */}
+                    </div>
+                  ))}
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -59,10 +59,10 @@ const UserManager: React.FC = () => {
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           <tr>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surname</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
-            <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Edit</th>
+            <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+            <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surname</th>
+            <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+            <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Edit</th>
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200">
@@ -77,20 +77,18 @@ const UserManager: React.FC = () => {
               <tr
                 key={trainer.id}
                 className="cursor-pointer hover:bg-gray-50"
-                onClick={() => navigate(`/users/${trainer.id}`)}
+                onClick={() => navigate(`/trainers/${trainer.id}`)}
               >
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                   <div className="text-sm font-medium text-gray-900">{trainer.name}</div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                   <div className="text-sm text-gray-900">{trainer.surname}</div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <span className="px-2 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-800">
-                    {trainer.role}
-                  </span>
+                <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
+                  <div className="text-sm text-gray-900">{trainer.role}</div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <td className="px-4 sm:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <button
                     className="text-primary-600 hover:text-primary-900"
                     onClick={e => { e.stopPropagation(); /* handle edit here */ }}
@@ -114,16 +112,16 @@ const UserManager: React.FC = () => {
           placeholder="Search by name..."
           value={clientSearch}
           onChange={e => setClientSearch(e.target.value)}
-          className="border border-gray-300 rounded px-3 py-2 w-64 focus:outline-none focus:ring focus:border-primary-300"
+          className="w-full sm:w-64 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-primary-300"
         />
       </div>
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surname</th>
-              <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Edit</th>
+              <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+              <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surname</th>
+              <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Edit</th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
@@ -140,13 +138,13 @@ const UserManager: React.FC = () => {
                   className="cursor-pointer hover:bg-gray-50"
                   onClick={() => navigate(`/clients/${client.id}`)}
                 >
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                     <div className="text-sm font-medium text-gray-900">{client.name}</div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-gray-900">{client.surname}</div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <td className="px-4 sm:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                     <button
                       className="text-primary-600 hover:text-primary-900"
                       onClick={e => { e.stopPropagation(); /* handle edit here */ }}
@@ -165,9 +163,9 @@ const UserManager: React.FC = () => {
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <h2 className="text-2xl font-bold text-gray-900">User Manager</h2>
-        <button className="btn btn-primary">
+        <button className="w-full sm:w-auto btn btn-primary">
           Add {activeTab === 'trainer' ? 'Trainer' : 'Client'}
         </button>
       </div>
@@ -177,7 +175,7 @@ const UserManager: React.FC = () => {
           <nav className="flex -mb-px">
             <button
               onClick={() => setActiveTab('trainer')}
-              className={`py-4 px-6 text-sm font-medium ${
+              className={`py-4 px-4 sm:px-6 text-sm font-medium ${
                 activeTab === 'trainer'
                   ? 'border-b-2 border-primary-500 text-primary-600'
                   : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -187,7 +185,7 @@ const UserManager: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveTab('client')}
-              className={`py-4 px-6 text-sm font-medium ${
+              className={`py-4 px-4 sm:px-6 text-sm font-medium ${
                 activeTab === 'client'
                   ? 'border-b-2 border-primary-500 text-primary-600'
                   : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'

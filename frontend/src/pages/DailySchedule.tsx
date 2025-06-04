@@ -179,31 +179,34 @@ const DailySchedule: React.FC = () => {
         levelText = 'text-[#391085]';
       }
       slots.push(
-        <div key={hour} className="relative">
+        <div key={hour} className="flex flex-row items-start">
           {/* Hour label */}
-          <div className="absolute -left-16 w-14 text-right text-sm text-gray-500">
+          <div style={{ maxWidth: 14, minWidth: 14, fontFamily: 'Helvetica Neue, Arial, sans-serif', fontSize: 12, lineHeight: '16px', color: '#333333', fontWeight: 400 }} className="flex justify-end text-right h-24">
             {hour}
           </div>
+          {/* 16px gap between time and card */}
+          <div style={{ width: 16 }} />
           {/* Session card or empty slot */}
-          <div className="h-24 border-b border-gray-200 flex items-center">
+          <div className="h-24 border-b border-gray-200 flex items-center m-0 p-0 flex-1">
             {session ? (
               <div
-                className={`flex items-center w-full bg-white rounded shadow-sm pl-0 pr-4 py-2 ml-0 h-20 relative border-l-4 ${isFull ? 'border-red-500' : 'border-green-400'} cursor-pointer`}
+                className={`flex items-center w-full h-full bg-[#fafafa] border-t border-b border-r border-solid border-gray-200 ${isFull ? 'border-l-red-500' : 'border-l-green-400'} border-l-[4px] cursor-pointer`}
                 onClick={() => navigate(`/session/${session.id}`)}
                 role="button"
                 tabIndex={0}
                 onKeyPress={e => { if (e.key === 'Enter') navigate(`/session/${session.id}`); }}
+                style={{ minWidth: 0, borderRadius: 0, padding: 16 }}
               >
                 <img
                   src={session.trainerImg}
                   alt={session.trainer}
-                  className="w-14 h-14 rounded-full object-cover ml-2 mr-4 border border-gray-200"
+                  className="w-[44px] h-[44px] rounded-full object-cover flex-shrink-0 border border-gray-200"
                 />
-                <div className="flex-1">
-                  <div className="font-semibold text-lg text-gray-800">{selectedRoom}</div>
+                <div className="flex-1 min-w-0 ml-[12px]">
+                  <div style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif', fontSize: 13, lineHeight: '131%', color: '#333333', fontWeight: 500 }} className="truncate">{selectedRoom}</div>
                   <div className={`inline-block px-2 py-0.5 text-xs rounded font-semibold mt-1 ${levelBg} ${levelText}`}>Level {session.level}</div>
                 </div>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-600 text-lg font-semibold">
+                <div style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif', fontSize: 13, lineHeight: '131%', color: '#595959', fontWeight: 500 }} className="ml-2 flex-shrink-0">
                   {session.attendees}/{session.capacity}
                 </div>
               </div>
@@ -219,13 +222,13 @@ const DailySchedule: React.FC = () => {
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <h2 className="text-2xl font-bold text-gray-900">Daily Schedule</h2>
-        <div className="relative">
+        <div className="relative w-full sm:w-auto">
           <select
             value={selectedRoom}
             onChange={(e) => setSelectedRoom(e.target.value)}
-            className="appearance-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+            className="w-full sm:w-auto appearance-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
           >
             {rooms.map((room) => (
               <option key={room} value={room}>
@@ -266,12 +269,12 @@ const DailySchedule: React.FC = () => {
         </div>
 
         {/* Day Tabs */}
-        <div className="grid grid-cols-7 gap-2">
+        <div className="grid grid-cols-7 gap-2 overflow-x-auto">
           {weekDates.map((date) => (
             <button
               key={date.toISOString()}
               onClick={() => setSelectedDate(date)}
-              className={`flex flex-col items-center p-3 rounded-lg transition-colors ${
+              className={`flex flex-col items-center p-2 sm:p-3 rounded-lg transition-colors ${
                 isSelected(date)
                   ? 'bg-primary-500 text-white'
                   : isToday(date)
@@ -279,16 +282,16 @@ const DailySchedule: React.FC = () => {
                   : 'hover:bg-gray-100 text-gray-700'
               }`}
             >
-              <span className="text-sm font-medium">{formatDayOfWeek(date)}</span>
-              <span className="text-lg font-semibold">{formatDayOfMonth(date)}</span>
+              <span className="text-xs sm:text-sm font-medium">{formatDayOfWeek(date)}</span>
+              <span className="text-base sm:text-lg font-semibold">{formatDayOfMonth(date)}</span>
             </button>
           ))}
         </div>
       </div>
       
       {/* Time Grid */}
-      <div className="bg-white shadow rounded-lg p-4">
-        <div className="relative pl-16">
+      <div className="overflow-x-auto">
+        <div className="relative">
           {generateTimeSlots()}
         </div>
       </div>
