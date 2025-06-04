@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import sessionsData from '../data/sessions.json';
 import groupAttendanceData from '../data/group_attendance.json';
 import typeOfGroupsData from '../data/type_of_groups.json';
+import groupTrainers from '../data/group_trainers.json';
 
 // Types for sessions
 type Session = {
@@ -60,11 +61,15 @@ const DailySchedule: React.FC = () => {
       const startTime = parseInt(session.time.split(':')[0], 10);
       const groupId = session.group.id;
       const typeOfGroupId = session.group.type_of_group;
+      // Get trainerId as 3-digit string from group_trainers.json
+      const trainersMap = groupTrainers.group_trainers as Record<string, string>;
+      const trainerId = trainersMap[String(groupId)] || '001';
+      const trainerImg = `/avatars/trainer-${trainerId}.jpg`;
       return {
         id: session.id,
         title: `Group ${groupId}`,
-        trainer: '',
-        trainerImg: '',
+        trainer: `Trainer ${trainerId}`,
+        trainerImg,
         startTime,
         duration: 1,
         room: session.room.name,
