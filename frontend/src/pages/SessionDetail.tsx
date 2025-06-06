@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Card, List, Avatar, Button, Tag, Typography, Space } from 'antd';
-import { ArrowLeftOutlined, UserOutlined, SaveOutlined, CloseOutlined } from '@ant-design/icons';
+import { Card, List, Avatar, Button, Tag, Typography, Space, Divider, Select } from 'antd';
+import { ArrowLeftOutlined, UserOutlined, SaveOutlined, CloseOutlined, UserAddOutlined, FileOutlined } from '@ant-design/icons';
 import sessionsData from '../data/sessions.json';
 import groupTrainers from '../data/group_trainers.json';
 import usersData from '../data/users.json';
@@ -56,6 +56,7 @@ const mobileStyle = `
 const SessionDetail: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [selectedTrainer, setSelectedTrainer] = React.useState<string>('');
 
   // Remove top and bottom padding from the parent wrapper only on this page
   useEffect(() => {
@@ -81,6 +82,13 @@ const SessionDetail: React.FC = () => {
   const typeOfGroup = getTypeOfGroup(session.group.type_of_group);
   const attendees = getAttendeesByGroupId(session.group.id);
 
+  // Set initial trainer value
+  useEffect(() => {
+    if (trainer) {
+      setSelectedTrainer(trainer.id);
+    }
+  }, [trainer]);
+
   // Date and time formatting
   const dateObj = new Date(session.date);
   const dateStr = dateObj.toLocaleDateString('en-GB', { weekday: 'long', day: '2-digit', month: '2-digit', year: '2-digit' });
@@ -100,35 +108,49 @@ const SessionDetail: React.FC = () => {
 
         {/* Session Info Card */}
         <Card bordered={false} style={{ borderRadius: 12, marginBottom: 16, padding: 0 }} bodyStyle={{ padding: '12px 16px' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0' }}>
+              <div style={{ width: '50%' }}>
                 <Text type="secondary">Date</Text>
                 <div>{dateStr}</div>
               </div>
-              <div>
+              <div style={{ width: '50%' }}>
                 <Text type="secondary">Schedule</Text>
                 <div>{scheduleStr}</div>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <div>
+            <Divider style={{ margin: 0 }} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0' }}>
+              <div style={{ width: '50%' }}>
                 <Text type="secondary">Room</Text>
                 <div>{session.room.name}</div>
               </div>
-              <div>
+              <div style={{ width: '50%' }}>
                 <Text type="secondary">Level</Text>
                 <div style={{ fontWeight: 600 }}>Level {session.group.level}</div>
               </div>
             </div>
-            <div>
+            <Divider style={{ margin: 0 }} />
+            <div style={{ padding: '12px 0' }}>
               <Text type="secondary">Trainer</Text>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <Avatar src={`/avatars/trainer-${trainer?.id}.jpg`} size={32} />
-                <span>{trainer ? `${trainer.name} ${trainer.surname}` : 'Unknown'}</span>
-              </div>
+              <Select
+                style={{ width: '100%', marginTop: 4 }}
+                value={selectedTrainer}
+                onChange={setSelectedTrainer}
+                optionLabelProp="label"
+                options={usersData.trainers.map((t: any) => ({
+                  value: t.id,
+                  label: (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <Avatar src={`/avatars/trainer-${t.id}.jpg`} size={32} style={{ margin: '8px 0' }} />
+                      <span>{`${t.name} ${t.surname}`}</span>
+                    </div>
+                  )
+                }))}
+              />
             </div>
-            <div>
+            <Divider style={{ margin: 0 }} />
+            <div style={{ padding: '12px 0' }}>
               <Text type="secondary">Type of group</Text>
               <div>{typeOfGroup?.type_of_group || 'Unknown'}</div>
             </div>
@@ -136,9 +158,28 @@ const SessionDetail: React.FC = () => {
         </Card>
 
         {/* Attendees Title */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-          <span style={{ fontWeight: 600, fontSize: 16 }}>Attendees</span>
-          <Tag color="blue">{attendees.length}/{session.group.capacity}</Tag>
+        <div style={{ 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: 8, 
+          marginTop: 24,
+          marginBottom: 8,
+          fontFamily: 'Helvetica Neue',
+          fontSize: 15,
+          lineHeight: '20px',
+          fontWeight: 400,
+          color: '#666666',
+          justifyContent: 'space-between'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span>Attendees</span>
+            <Tag color="blue">{attendees.length}/{session.group.capacity}</Tag>
+          </div>
+          <Button
+            type="text"
+            icon={<UserAddOutlined style={{ fontSize: 24, color: '#333333' }} />}
+            style={{ marginLeft: 'auto' }}
+          />
         </div>
 
         {/* Attendees List Card */}
@@ -153,12 +194,11 @@ const SessionDetail: React.FC = () => {
             renderItem={(item: any) => (
               <List.Item
                 actions={[
-                  <Button icon={<UserOutlined />} size="small" type="text" />,
+                  <Button icon={<FileOutlined />} size="small" type="text" />,
                   <Button icon={<CloseOutlined />} size="small" type="text" danger />
                 ]}
               >
                 <List.Item.Meta
-                  avatar={<Avatar>{item.name[0]}</Avatar>}
                   title={<span>{item.name} {item.surname}</span>}
                   description={<span style={{ color: '#8c8c8c', fontSize: 12 }}>{item.file}</span>}
                 />
