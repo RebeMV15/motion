@@ -1,5 +1,8 @@
 import React, { useState, ReactElement } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Dropdown, Button, Space } from 'antd'
+import { DownOutlined, LeftOutlined, RightOutlined } from '@ant-design/icons'
+import type { MenuProps } from 'antd'
 import sessionsData from '../data/sessions.json';
 import groupAttendanceData from '../data/group_attendance.json';
 import typeOfGroupsData from '../data/type_of_groups.json';
@@ -33,6 +36,15 @@ const DailySchedule: React.FC = () => {
   const [selectedDate, setSelectedDate] = useState(new Date())
   const rooms = ['Room 1', 'Room 2']
   const navigate = useNavigate()
+
+  const handleMenuClick: MenuProps['onClick'] = (e) => {
+    setSelectedRoom(rooms[Number(e.key) - 1]);
+  };
+
+  const items: MenuProps['items'] = rooms.map((room, index) => ({
+    key: String(index + 1),
+    label: room,
+  }));
 
   // Helper function to compare dates (ignoring time)
   const isSameDay = (date1: Date, date2: Date): boolean => {
@@ -190,7 +202,7 @@ const DailySchedule: React.FC = () => {
           <div className="h-24 border-b border-gray-200 flex items-center m-0 p-0 flex-1">
             {session ? (
               <div
-                className={`flex items-center w-full h-full bg-[#fafafa] border-t border-b border-r border-solid border-gray-200 ${isFull ? 'border-l-red-500' : 'border-l-green-400'} border-l-[4px] cursor-pointer`}
+                className={`flex items-center w-full h-full bg-[#fafafa] border-t border-b border-r border-solid border-gray-200 ${isFull ? 'border-l-[#cf1322]' : 'border-l-[#7CB305]'} border-l-[4px] cursor-pointer`}
                 onClick={() => navigate(`/session/${session.id}`)}
                 role="button"
                 tabIndex={0}
@@ -221,77 +233,169 @@ const DailySchedule: React.FC = () => {
   const weekDates = getWeekDates(selectedDate)
 
   return (
-    <div className="space-y-4">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <h2 className="text-2xl font-bold text-gray-900">Daily Schedule</h2>
-        <div className="relative w-full sm:w-auto">
-          <select
-            value={selectedRoom}
-            onChange={(e) => setSelectedRoom(e.target.value)}
-            className="w-full sm:w-auto appearance-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          >
-            {rooms.map((room) => (
-              <option key={room} value={room}>
-                {room}
-              </option>
-            ))}
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
+    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <div className="flex flex-row justify-between items-center gap-4" style={{ marginBottom: 16 }}>
+        <h2 style={{ 
+          fontFamily: 'Helvetica Neue, Arial, sans-serif', 
+          fontSize: 24, 
+          lineHeight: 'auto', 
+          color: '#333333', 
+          fontWeight: 500,
+          margin: 0
+        }}>Daily Schedule</h2>
+        <div className="relative w-auto">
+          <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={['click']}>
+            <Button style={{ 
+              fontFamily: 'Helvetica Neue, Arial, sans-serif',
+              fontSize: 14,
+              color: '#333333',
+              borderColor: '#d9d9d9',
+              borderRadius: 6,
+              height: 32,
+              padding: '4px 15px'
+            }}>
+              <Space>
+                {selectedRoom}
+                <DownOutlined />
+              </Space>
+            </Button>
+          </Dropdown>
         </div>
       </div>
 
       {/* Date Selector */}
-      <div className="bg-white shadow rounded-lg p-4">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center space-x-4">
-            <button
+      <div style={{
+        background: '#ffffff',
+        boxShadow: '0 8px 8px 0 rgba(0, 0, 0, 0.08)',
+        borderRadius: '8px 8px 0 0',
+        padding: '8px',
+        position: 'sticky',
+        top: 0,
+        zIndex: 1
+      }}>
+        <div className="flex items-center justify-between mb-2">
+          <h3 style={{
+            fontFamily: 'Helvetica Neue, Arial, sans-serif',
+            fontSize: '18px',
+            lineHeight: '24px',
+            color: '#333333',
+            fontWeight: 400,
+            margin: 0,
+            textAlign: 'left',
+          }}>{formatMonthYear(selectedDate)}</h3>
+          <div style={{ display: 'flex', gap: 10 }}>
+            <Button
               onClick={goToPreviousWeek}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            >
-              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <h3 className="text-lg font-semibold text-gray-900">{formatMonthYear(selectedDate)}</h3>
-            <button
+              style={{
+                width: 48,
+                height: 48,
+                borderRadius: 100,
+                background: '#f5f5f5',
+                border: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: 0,
+                boxShadow: 'none',
+              }}
+              icon={<LeftOutlined style={{ fontSize: 16, color: '#333333' }} />}
+              type="default"
+              tabIndex={0}
+              aria-label="Previous week"
+            />
+            <Button
               onClick={goToNextWeek}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            >
-              <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+              style={{
+                width: 48,
+                height: 48,
+                borderRadius: 100,
+                background: '#f5f5f5',
+                border: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: 0,
+                boxShadow: 'none',
+              }}
+              icon={<RightOutlined style={{ fontSize: 16, color: '#333333' }} />}
+              type="default"
+              tabIndex={0}
+              aria-label="Next week"
+            />
           </div>
         </div>
 
         {/* Day Tabs */}
         <div className="grid grid-cols-7 gap-2 overflow-x-auto">
-          {weekDates.map((date) => (
-            <button
-              key={date.toISOString()}
-              onClick={() => setSelectedDate(date)}
-              className={`flex flex-col items-center p-2 sm:p-3 rounded-lg transition-colors ${
-                isSelected(date)
-                  ? 'bg-primary-500 text-white'
-                  : isToday(date)
-                  ? 'bg-primary-100 text-primary-700'
-                  : 'hover:bg-gray-100 text-gray-700'
-              }`}
-            >
-              <span className="text-xs sm:text-sm font-medium">{formatDayOfWeek(date)}</span>
-              <span className="text-base sm:text-lg font-semibold">{formatDayOfMonth(date)}</span>
-            </button>
-          ))}
+          {weekDates.map((date) => {
+            const selected = isSelected(date);
+            const today = isToday(date);
+            return (
+              <button
+                key={date.toISOString()}
+                onClick={() => setSelectedDate(date)}
+                style={{
+                  border: 'none',
+                  borderRadius: 8,
+                  padding: '6px 0',
+                  background: selected
+                    ? '#1677ff'
+                    : today
+                    ? 'rgba(22,119,255,0.1)'
+                    : 'none',
+                  cursor: 'pointer',
+                  width: '100%',
+                  transition: 'background 0.2s',
+                }}
+                className={
+                  `flex flex-col items-center w-full focus:outline-none` +
+                  (!selected && !today ? ' hover:bg-[#f5f5f5]' : '')
+                }
+              >
+                <span
+                  style={{
+                    fontFamily: 'Helvetica Neue, Arial, sans-serif',
+                    fontSize: 12,
+                    lineHeight: '16px',
+                    fontWeight: 400,
+                    color: selected ? '#fff' : '#8c8c8c',
+                    transition: 'color 0.2s',
+                  }}
+                >
+                  {formatDayOfWeek(date)}
+                </span>
+                <span
+                  style={{
+                    fontFamily: 'Helvetica Neue, Arial, sans-serif',
+                    fontSize: 14,
+                    lineHeight: '19px',
+                    fontWeight: 700,
+                    color: selected ? '#fff' : '#333',
+                    transition: 'color 0.2s',
+                  }}
+                >
+                  {formatDayOfMonth(date)}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
       
       {/* Time Grid */}
-      <div className="overflow-x-auto">
-        <div className="relative">
+      <div
+        className="overflow-x-auto"
+        style={{
+          marginTop: -16,
+          position: 'relative',
+          zIndex: 0,
+          paddingTop: 16,
+          flex: 1,
+          overflowY: 'auto',
+          minHeight: 0
+        }}
+      >
+        <div>
           {generateTimeSlots()}
         </div>
       </div>
