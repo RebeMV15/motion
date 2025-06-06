@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from
 import { Suspense, lazy } from 'react'
 import { Layout, Menu, Button } from 'antd'
 import { CalendarOutlined, TeamOutlined, SettingOutlined, MenuOutlined } from '@ant-design/icons'
+import sessionsData from './data/sessions.json'
 // import { TestConnection } from './components/TestConnection'
 
 // Lazy load components
@@ -15,6 +16,15 @@ const { Header } = Layout;
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [sessions, setSessions] = useState(sessionsData.sessions);
+
+  const updateSession = (id, updatedFields) => {
+    setSessions(prev =>
+      prev.map(session =>
+        session.id === id ? { ...session, ...updatedFields } : session
+      )
+    );
+  };
 
   const Navigation = () => {
     const location = useLocation();
@@ -122,7 +132,15 @@ function App() {
               <Route path="/" element={<DailySchedule />} />
               <Route path="/weekly" element={<GroupConfigurator />} />
               <Route path="/users" element={<UserManager />} />
-              <Route path="/session/:id" element={<SessionDetail />} />
+              <Route
+                path="/session/:id"
+                element={
+                  <SessionDetail
+                    sessions={sessions}
+                    updateSession={updateSession}
+                  />
+                }
+              />
             </Routes>
           </Suspense>
         </Layout.Content>

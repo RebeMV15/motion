@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Card, List, Avatar, Button, Tag, Typography, Space, Divider, Select } from 'antd';
-import { ArrowLeftOutlined, UserOutlined, SaveOutlined, CloseOutlined, UserAddOutlined, FileOutlined } from '@ant-design/icons';
+import { Card, List, Avatar, Button, Tag, Typography, Space, Divider, Select, Modal, Input } from 'antd';
+import { ArrowLeftOutlined, UserOutlined, SaveOutlined, CloseOutlined, UserAddOutlined, FileOutlined, SearchOutlined } from '@ant-design/icons';
 import sessionsData from '../data/sessions.json';
 import groupTrainers from '../data/group_trainers.json';
 import usersData from '../data/users.json';
@@ -53,10 +53,17 @@ const mobileStyle = `
 }
 `;
 
-const SessionDetail: React.FC = () => {
+const SessionDetail = ({ sessions, updateSession }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [selectedTrainer, setSelectedTrainer] = React.useState<string>('');
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isFileModalVisible, setIsFileModalVisible] = useState(false);
+  const [selectedClientInfo, setSelectedClientInfo] = useState<any>(null);
+  const [searchText, setSearchText] = useState('');
+  const [selectedClient, setSelectedClient] = useState<any>(null);
+  const [localAttendees, setLocalAttendees] = useState<any[]>([]);
+  const [initialAttendeesLoaded, setInitialAttendeesLoaded] = useState(false);
 
   // Remove top and bottom padding from the parent wrapper only on this page
   useEffect(() => {
@@ -89,12 +96,80 @@ const SessionDetail: React.FC = () => {
     }
   }, [trainer]);
 
+  // Set initial attendees only once
+  useEffect(() => {
+    if (!initialAttendeesLoaded && attendees.length > 0) {
+      const sortedAttendees = [...attendees].sort((a: any, b: any) => {
+        const nameA = `${a.name} ${a.surname}`.toLowerCase();
+        const nameB = `${b.name} ${b.surname}`.toLowerCase();
+        return nameA.localeCompare(nameB);
+      });
+      setLocalAttendees(sortedAttendees);
+      setInitialAttendeesLoaded(true);
+    }
+  }, [attendees, initialAttendeesLoaded]);
+
+  // Filter clients based on search text
+  const filteredClients = usersData.clients
+    .filter((client: any) => {
+      const fullName = `${client.name} ${client.surname}`.toLowerCase();
+      return fullName.includes(searchText.toLowerCase());
+    })
+    .sort((a: any, b: any) => {
+      const nameA = `${a.name} ${a.surname}`.toLowerCase();
+      const nameB = `${b.name} ${b.surname}`.toLowerCase();
+      return nameA.localeCompare(nameB);
+    });
+
+  const handleAddAttendee = () => {
+    if (selectedClient) {
+      // Check if client is already in the list
+      const isAlreadyAttending = localAttendees.some(attendee => attendee.id === selectedClient.id);
+      
+      if (!isAlreadyAttending) {
+        const newAttendees = [...localAttendees, selectedClient].sort((a: any, b: any) => {
+          const nameA = `${a.name} ${a.surname}`.toLowerCase();
+          const nameB = `${b.name} ${b.surname}`.toLowerCase();
+          return nameA.localeCompare(nameB);
+        });
+        setLocalAttendees(newAttendees);
+      }
+      
+      // Reset modal state
+      setSelectedClient(null);
+      setSearchText('');
+      setIsModalVisible(false);
+    }
+  };
+
+  const handleRemoveAttendee = (attendeeId: string) => {
+    const newAttendees = localAttendees.filter(attendee => attendee.id !== attendeeId);
+    setLocalAttendees(newAttendees);
+  };
+
+  const handleFileClick = (client: any) => {
+    setSelectedClientInfo(client);
+    setIsFileModalVisible(true);
+  };
+
   // Date and time formatting
   const dateObj = new Date(session.date);
   const dateStr = dateObj.toLocaleDateString('en-GB', { weekday: 'long', day: '2-digit', month: '2-digit', year: '2-digit' });
   const startHour = session.time.split(':')[0];
   const endHour = (parseInt(startHour) + 1).toString().padStart(2, '0');
   const scheduleStr = `${startHour.padStart(2, '0')} - ${endHour} h`;
+
+  const handleSave = () => {
+    console.log('Saving...', selectedTrainer, localAttendees);
+    updateSession(session.id, {
+      group: {
+        ...session.group,
+        trainer: selectedTrainer,
+        attendees: localAttendees.map(a => a.id),
+      },
+    });
+    navigate('/');
+  };
 
   return (
     <>
@@ -142,7 +217,7 @@ const SessionDetail: React.FC = () => {
                   value: t.id,
                   label: (
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <Avatar src={`/avatars/trainer-${t.id}.jpg`} size={32} style={{ margin: '8px 0' }} />
+                      <Avatar src={`/avatars/trainer-${t.id}.jpg`} size={24} style={{ margin: '8px 0' }} />
                       <span>{`${t.name} ${t.surname}`}</span>
                     </div>
                   )
@@ -173,12 +248,13 @@ const SessionDetail: React.FC = () => {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <span>Attendees</span>
-            <Tag color="blue">{attendees.length}/{session.group.capacity}</Tag>
+            <Tag color="blue">{localAttendees.length}/{session.group.capacity}</Tag>
           </div>
           <Button
             type="text"
             icon={<UserAddOutlined style={{ fontSize: 24, color: '#333333' }} />}
             style={{ marginLeft: 'auto' }}
+            onClick={() => setIsModalVisible(true)}
           />
         </div>
 
@@ -190,12 +266,23 @@ const SessionDetail: React.FC = () => {
         >
           <List
             itemLayout="horizontal"
-            dataSource={attendees}
+            dataSource={localAttendees}
             renderItem={(item: any) => (
               <List.Item
                 actions={[
-                  <Button icon={<FileOutlined />} size="small" type="text" />,
-                  <Button icon={<CloseOutlined />} size="small" type="text" danger />
+                  <Button 
+                    icon={<FileOutlined />} 
+                    size="small" 
+                    type="text" 
+                    onClick={() => handleFileClick(item)}
+                  />,
+                  <Button 
+                    icon={<CloseOutlined />} 
+                    size="small" 
+                    type="text" 
+                    danger 
+                    onClick={() => handleRemoveAttendee(item.id)}
+                  />
                 ]}
               >
                 <List.Item.Meta
@@ -207,10 +294,105 @@ const SessionDetail: React.FC = () => {
           />
         </Card>
 
+        {/* Add Attendee Modal */}
+        <Modal
+          title="Add Attendee"
+          open={isModalVisible}
+          onCancel={() => {
+            setIsModalVisible(false);
+            setSearchText('');
+            setSelectedClient(null);
+          }}
+          footer={[
+            <Button key="cancel" onClick={() => {
+              setIsModalVisible(false);
+              setSearchText('');
+              setSelectedClient(null);
+            }}>
+              Cancel
+            </Button>,
+            <Button 
+              key="add" 
+              type="primary" 
+              onClick={handleAddAttendee}
+              disabled={!selectedClient}
+            >
+              Add attendee
+            </Button>
+          ]}
+          width={400}
+        >
+          <Input
+            placeholder="Search clients..."
+            prefix={<SearchOutlined />}
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            style={{ marginBottom: 16 }}
+          />
+          <List
+            itemLayout="horizontal"
+            dataSource={filteredClients}
+            style={{ maxHeight: 400, overflow: 'auto' }}
+            renderItem={(item: any) => (
+              <List.Item
+                onClick={() => setSelectedClient(item)}
+                style={{ 
+                  cursor: 'pointer',
+                  backgroundColor: selectedClient?.id === item.id ? '#f0f0f0' : 'transparent',
+                  borderRadius: 4,
+                  padding: '8px 12px'
+                }}
+              >
+                <List.Item.Meta
+                  title={`${item.name} ${item.surname}`}
+                  description={<span style={{ color: '#8c8c8c', fontSize: 12 }}>{item.file}</span>}
+                />
+              </List.Item>
+            )}
+          />
+        </Modal>
+
+        {/* Client File Modal */}
+        <Modal
+          title={`${selectedClientInfo?.name} ${selectedClientInfo?.surname}`}
+          open={isFileModalVisible}
+          onCancel={() => {
+            setIsFileModalVisible(false);
+            setSelectedClientInfo(null);
+          }}
+          footer={[
+            <Button 
+              key="close" 
+              onClick={() => {
+                setIsFileModalVisible(false);
+                setSelectedClientInfo(null);
+              }}
+            >
+              Close
+            </Button>
+          ]}
+          width={400}
+        >
+          <div style={{ padding: '16px 0' }}>
+            <Text type="secondary" style={{ display: 'block', marginBottom: 16 }}>
+              {selectedClientInfo?.description}
+            </Text>
+            <Text>
+              This is a dummy text representing the text with the client's notes and medical history, with health data relevant to the training.
+            </Text>
+          </div>
+        </Modal>
+
         {/* Buttons */}
         <Space style={{ width: '100%', justifyContent: 'flex-end', marginBottom: 16 }}>
           <Button onClick={() => navigate(-1)}>Cancel</Button>
-          <Button type="primary" icon={<SaveOutlined />}>Save</Button>
+          <Button
+            type="primary"
+            icon={<SaveOutlined />}
+            onClick={handleSave}
+          >
+            Save
+          </Button>
         </Space>
       </div>
     </>
