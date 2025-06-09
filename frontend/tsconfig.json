@@ -19,5 +19,6 @@
     "esModuleInterop": true
   },
   "include": ["src"],
+  "exclude": ["src/scripts/generateSessions.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 } 
