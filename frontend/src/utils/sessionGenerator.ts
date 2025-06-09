@@ -85,7 +85,4 @@ const generateSessions = (startDate: string, endDate: string): Session[] => {
   return sessions;
 };
 
-// Alias for generateSessions
-const generateGroupSessions = generateSessions;
-
-module.exports = { generateSessions, generateGroupSessions }; 
+module.exports = { generateSessions }; 
