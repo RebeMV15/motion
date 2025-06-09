@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Card, List, Avatar, Button, Tag, Typography, Space, Divider, Select, Modal, Input } from 'antd';
-import { ArrowLeftOutlined, SaveOutlined, CloseOutlined, UserAddOutlined, FileOutlined, SearchOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, SaveOutlined, UserAddOutlined, RightOutlined, SearchOutlined } from '@ant-design/icons';
 import sessionsData from '../data/sessions.json';
 import groupTrainers from '../data/group_trainers.json';
 import usersData from '../data/users.json';
@@ -14,7 +14,7 @@ export interface Session {
   id: string;
   date: string;
   time: string;
-  weekday?: string;
+  weekday: string;
   room: {
     name: string;
   };
@@ -46,6 +46,11 @@ interface Client {
 interface TypeOfGroup {
   id: number;
   type_of_group: string;
+}
+
+interface RoomOption {
+  id: number;
+  name: string;
 }
 
 interface SessionDetailProps {
@@ -96,19 +101,19 @@ const mobileStyle = `
 }
 `;
 
-const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }) => {
+const GroupSessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [selectedTrainer, setSelectedTrainer] = useState<string>('');
+  const [selectedRoom, setSelectedRoom] = useState<string>('');
+  const [selectedLevel, setSelectedLevel] = useState<number>(1);
+  const [selectedTypeOfGroup, setSelectedTypeOfGroup] = useState<number>(1);
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
-  const [isFileModalVisible, setIsFileModalVisible] = useState<boolean>(false);
-  const [selectedClientInfo, setSelectedClientInfo] = useState<Client | null>(null);
-  const [searchText, setSearchText] = useState<string>('');
   const [selectedClient, setSelectedClient] = useState<Client | null>(null);
+  const [searchText, setSearchText] = useState<string>('');
   const [localAttendees, setLocalAttendees] = useState<Client[]>([]);
   const [initialAttendeesLoaded, setInitialAttendeesLoaded] = useState<boolean>(false);
 
-  // Remove top and bottom padding from the parent wrapper only on this page
   useEffect(() => {
     const parent = document.querySelector('.session-detail-container')?.parentElement;
     if (parent) {
@@ -132,14 +137,14 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
   const typeOfGroup = getTypeOfGroup(session.group.type_of_group);
   const attendees = getAttendeesByGroupId(session.group.id);
 
-  // Set initial trainer value
+  // Set initial values
   useEffect(() => {
-    if (trainer) {
-      setSelectedTrainer(trainer.id);
-    }
-  }, [trainer]);
+    if (trainer) setSelectedTrainer(trainer.id);
+    setSelectedRoom(session.room.name);
+    setSelectedLevel(session.group.level);
+    setSelectedTypeOfGroup(session.group.type_of_group);
+  }, [trainer, session]);
 
-  // Set initial attendees only once
   useEffect(() => {
     if (!initialAttendeesLoaded && attendees.length > 0) {
       const sortedAttendees = [...attendees].sort((a: any, b: any) => {
@@ -167,7 +172,6 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
   const handleAddAttendee = (): void => {
     if (selectedClient) {
       const isAlreadyAttending = localAttendees.some(attendee => attendee.id === selectedClient.id);
-      
       if (!isAlreadyAttending) {
         const newAttendees = [...localAttendees, selectedClient].sort((a: Client, b: Client) => {
           const nameA = `${a.name} ${a.surname}`.toLowerCase();
@@ -176,41 +180,46 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
         });
         setLocalAttendees(newAttendees);
       }
-      
       setSelectedClient(null);
       setSearchText('');
       setIsModalVisible(false);
     }
   };
 
-  const handleRemoveAttendee = (attendeeId: string): void => {
-    const newAttendees = localAttendees.filter(attendee => attendee.id !== attendeeId);
-    setLocalAttendees(newAttendees);
-  };
-
-  const handleFileClick = (client: Client): void => {
-    setSelectedClientInfo(client);
-    setIsFileModalVisible(true);
-  };
-
   // Date and time formatting
-  const dateObj = new Date(session.date);
-  const dateStr = dateObj.toLocaleDateString('en-GB', { weekday: 'long', day: '2-digit', month: '2-digit', year: '2-digit' });
+  const weekdayStr = session.weekday || new Date(session.date).toLocaleDateString('en-US', { weekday: 'long' });
   const startHour = session.time.split(':')[0];
   const endHour = (parseInt(startHour) + 1).toString().padStart(2, '0');
   const scheduleStr = `${startHour.padStart(2, '0')} - ${endHour} h`;
 
   const handleSave = (): void => {
-    console.log('Saving...', selectedTrainer, localAttendees);
     updateSession(session.id, {
+      room: { ...session.room, name: selectedRoom },
       group: {
         ...session.group,
+        level: selectedLevel,
+        type_of_group: selectedTypeOfGroup,
         trainer: selectedTrainer,
         attendees: localAttendees.map(a => a.id),
       },
     });
-    navigate('/');
+    navigate('/weekly');
   };
+
+  // Room, Level, and Type of Group options
+  const roomOptions = [
+    ...new Set(sessionsData.sessions.map((s: Session) => s.room.name))
+  ].map((name, idx) => ({ label: name, value: name }));
+  const levelOptions = [1, 2, 3].map(lvl => ({ label: `Level ${lvl}`, value: lvl }));
+  const typeOfGroupOrder = ['Single training', 'Group of 5', 'Group of 8', 'Learning'];
+  const typeOfGroupOptions = typeOfGroupsData.type_of_groups
+    .slice()
+    .sort((a: any, b: any) => typeOfGroupOrder.indexOf(a.type_of_group) - typeOfGroupOrder.indexOf(b.type_of_group))
+    .map((t: any) => ({ label: t.type_of_group, value: t.id, capacity: t.capacity }));
+
+  // Get the selected type of group capacity
+  const selectedTypeOfGroupObj = typeOfGroupsData.type_of_groups.find((t: any) => t.id === selectedTypeOfGroup);
+  const selectedTypeOfGroupCapacity = selectedTypeOfGroupObj ? selectedTypeOfGroupObj.capacity : session.group.capacity;
 
   return (
     <>
@@ -219,7 +228,7 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
         {/* Title and Back Arrow */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 16, marginBottom: 16 }}>
           <Button type="text" icon={<ArrowLeftOutlined />} onClick={() => navigate(-1)} style={{ marginLeft: -8, marginRight: 0, padding: 0 }} />
-          <span style={{ fontWeight: 600, fontSize: 18 }}>Details session</span>
+          <span style={{ fontWeight: 600, fontSize: 18 }}>Details group</span>
         </div>
 
         {/* Session Info Card */}
@@ -227,8 +236,8 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0', gap: 24 }}>
               <div style={{ flex: 1 }}>
-                <Text type="secondary">Date</Text>
-                <div>{dateStr}</div>
+                <Text type="secondary">Weekday</Text>
+                <div>{weekdayStr}</div>
               </div>
               <div style={{ flex: 1 }}>
                 <Text type="secondary">Schedule</Text>
@@ -239,11 +248,21 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 0', gap: 24 }}>
               <div style={{ flex: 1 }}>
                 <Text type="secondary">Room</Text>
-                <div>{session.room.name}</div>
+                <Select
+                  style={{ width: '100%', marginTop: 4 }}
+                  value={selectedRoom}
+                  onChange={setSelectedRoom}
+                  options={roomOptions}
+                />
               </div>
               <div style={{ flex: 1 }}>
                 <Text type="secondary">Level</Text>
-                <div style={{ fontWeight: 600 }}>Level {session.group.level}</div>
+                <Select
+                  style={{ width: '100%', marginTop: 4 }}
+                  value={selectedLevel}
+                  onChange={setSelectedLevel}
+                  options={levelOptions}
+                />
               </div>
             </div>
             <Divider style={{ margin: 0 }} />
@@ -275,12 +294,17 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
             <Divider style={{ margin: 0 }} />
             <div style={{ padding: '12px 0' }}>
               <Text type="secondary">Type of group</Text>
-              <div>{typeOfGroup?.type_of_group || 'Unknown'}</div>
+              <Select
+                style={{ width: '100%', marginTop: 4 }}
+                value={selectedTypeOfGroup}
+                onChange={setSelectedTypeOfGroup}
+                options={typeOfGroupOptions}
+              />
             </div>
           </div>
         </Card>
 
-        {/* Attendees Title */}
+        {/* Members Title */}
         <div style={{ 
           display: 'flex', 
           alignItems: 'center', 
@@ -295,8 +319,8 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
           justifyContent: 'space-between'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <span>Attendees</span>
-            <Tag color="blue">{localAttendees.length}/{session.group.capacity}</Tag>
+            <span>Members</span>
+            <Tag color="blue">{localAttendees.length}/{selectedTypeOfGroupCapacity}</Tag>
           </div>
           <Button
             type="text"
@@ -306,7 +330,7 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
           />
         </div>
 
-        {/* Attendees List Card */}
+        {/* Members List Card */}
         <Card
           bordered={false}
           style={{ borderRadius: 12, marginBottom: 16, padding: 0 }}
@@ -317,20 +341,10 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
             dataSource={localAttendees}
             renderItem={(item: any) => (
               <List.Item
+                onClick={() => navigate(`/client/${item.id}`)}
+                style={{ cursor: 'pointer' }}
                 actions={[
-                  <Button 
-                    icon={<FileOutlined />} 
-                    size="small" 
-                    type="text" 
-                    onClick={() => handleFileClick(item)}
-                  />,
-                  <Button 
-                    icon={<CloseOutlined />} 
-                    size="small" 
-                    type="text" 
-                    danger 
-                    onClick={() => handleRemoveAttendee(item.id)}
-                  />
+                  <RightOutlined style={{ fontSize: 16, color: '#bfbfbf' }} />
                 ]}
               >
                 <List.Item.Meta
@@ -342,9 +356,9 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
           />
         </Card>
 
-        {/* Add Attendee Modal */}
+        {/* Add Member Modal */}
         <Modal
-          title="Add Attendee"
+          title="Add Member"
           open={isModalVisible}
           onCancel={() => {
             setIsModalVisible(false);
@@ -365,7 +379,7 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
               onClick={handleAddAttendee}
               disabled={!selectedClient}
             >
-              Add attendee
+              Add member
             </Button>
           ]}
           width={400}
@@ -400,37 +414,6 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
           />
         </Modal>
 
-        {/* Client File Modal */}
-        <Modal
-          title={`${selectedClientInfo?.name} ${selectedClientInfo?.surname}`}
-          open={isFileModalVisible}
-          onCancel={() => {
-            setIsFileModalVisible(false);
-            setSelectedClientInfo(null);
-          }}
-          footer={[
-            <Button 
-              key="close" 
-              onClick={() => {
-                setIsFileModalVisible(false);
-                setSelectedClientInfo(null);
-              }}
-            >
-              Close
-            </Button>
-          ]}
-          width={400}
-        >
-          <div style={{ padding: '16px 0' }}>
-            <Text type="secondary" style={{ display: 'block', marginBottom: 16 }}>
-              {selectedClientInfo?.description}
-            </Text>
-            <Text>
-              This is a dummy text representing the text with the client's notes and medical history, with health data relevant to the training.
-            </Text>
-          </div>
-        </Modal>
-
         {/* Buttons */}
         <Space style={{ width: '100%', justifyContent: 'flex-end', marginBottom: 16 }}>
           <Button onClick={() => navigate(-1)}>Cancel</Button>
@@ -447,4 +430,4 @@ const SessionDetail: React.FC<SessionDetailProps> = ({ sessions, updateSession }
   );
 };
 
-export default SessionDetail; 
+export default GroupSessionDetail; 

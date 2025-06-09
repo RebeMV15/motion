@@ -4,6 +4,7 @@ import { Suspense, lazy } from 'react'
 import { Layout, Menu, Button } from 'antd'
 import { CalendarOutlined, TeamOutlined, SettingOutlined, MenuOutlined } from '@ant-design/icons'
 import sessionsData from './data/sessions.json'
+import { Session } from './pages/SessionDetail'
 // import { TestConnection } from './components/TestConnection'
 
 // Lazy load components
@@ -11,14 +12,16 @@ const DailySchedule = lazy(() => import('./pages/DailySchedule'))
 const GroupConfigurator = lazy(() => import('./pages/GroupConfigurator'))
 const UserManager = lazy(() => import('./pages/UserManager'))
 const SessionDetail = lazy(() => import('./pages/SessionDetail'))
+const GroupSessionDetail = lazy(() => import('./pages/GroupSessionDetail'))
+const ClientDetail = lazy(() => import('./pages/ClientDetail'))
 
 const { Header } = Layout;
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [sessions, setSessions] = useState(sessionsData.sessions);
+  const [sessions, setSessions] = useState<Session[]>(sessionsData.sessions);
 
-  const updateSession = (id, updatedFields) => {
+  const updateSession = (id: string, updatedFields: Partial<Session>) => {
     setSessions(prev =>
       prev.map(session =>
         session.id === id ? { ...session, ...updatedFields } : session
@@ -140,6 +143,19 @@ function App() {
                     updateSession={updateSession}
                   />
                 }
+              />
+              <Route
+                path="/group/:id"
+                element={
+                  <GroupSessionDetail
+                    sessions={sessions}
+                    updateSession={updateSession}
+                  />
+                }
+              />
+              <Route
+                path="/client/:id"
+                element={<ClientDetail />}
               />
             </Routes>
           </Suspense>

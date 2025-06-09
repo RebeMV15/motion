@@ -23,14 +23,6 @@ type Session = {
   get attendees(): number
 }
 
-const trainerImages: Record<string, string> = {
-  'John Doe': 'https://randomuser.me/api/portraits/men/32.jpg',
-  'Jane Smith': 'https://randomuser.me/api/portraits/women/44.jpg',
-  'Mike Johnson': 'https://randomuser.me/api/portraits/men/65.jpg',
-  'Sarah Wilson': 'https://randomuser.me/api/portraits/women/68.jpg',
-  'Alex Brown': 'https://randomuser.me/api/portraits/men/12.jpg',
-};
-
 const DailySchedule: React.FC = () => {
   const [selectedRoom, setSelectedRoom] = useState('Room 1')
   const [selectedDate, setSelectedDate] = useState(new Date())
@@ -94,25 +86,6 @@ const DailySchedule: React.FC = () => {
   };
 
   const sessions = parseSessions();
-
-  // Function to get sessions for the selected room and time
-  const getSessionForTime = (hour: number): Session | undefined => {
-    return sessions.find(session => 
-      session.room === selectedRoom && 
-      session.startTime === hour &&
-      isSameDay(session.date, selectedDate)
-    )
-  }
-
-  // Function to get the session that spans this time slot
-  const getSessionForTimeSlot = (hour: number, isFirstHalf: boolean): Session | undefined => {
-    return sessions.find(session => 
-      session.room === selectedRoom && 
-      isSameDay(session.date, selectedDate) &&
-      (session.startTime === hour || 
-       (session.startTime < hour && session.startTime + session.duration > hour))
-    )
-  }
 
   // Function to get the week dates
   const getWeekDates = (date: Date) => {
