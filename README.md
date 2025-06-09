@@ -8,19 +8,17 @@ A responsive web application for managing Motion training center's schedules, cl
 - Weekly class planner
 - User management (trainers and clients)
 - Session creation with dropdowns
-- Responsive design using Tailwind CSS
+- Responsive design using Tailwind CSS and Ant Design
 
 ## Tech Stack
 
-- Frontend: React (Vite) + Tailwind CSS
-- Backend: Node.js
-- Database: Google Sheets API
+- Frontend: React (Vite), Ant Design, Tailwind CSS
+- Backend: Node.js (if used)
 
 ## Prerequisites
 
 - Node.js (v18 or higher)
 - npm (v9 or higher)
-- Google Cloud Platform account with Sheets API enabled
 
 ## Setup
 
@@ -30,9 +28,8 @@ A responsive web application for managing Motion training center's schedules, cl
    npm install
    ```
 
-3. Set up environment variables:
-   - Create `.env` files in both frontend and backend directories
-   - Add your Google Sheets API credentials
+3. Set up environment variables (if needed):
+   - Create `.env` files in both frontend and backend directories if your project requires them
 
 4. Start the development servers:
    ```bash
@@ -44,7 +41,7 @@ A responsive web application for managing Motion training center's schedules, cl
 ```
 motion-training-center/
 ├── frontend/           # React + Vite frontend
-├── backend/           # Node.js backend
+├── backend/           # Node.js backend (if present)
 └── package.json       # Root package.json for workspace management
 ```
 
