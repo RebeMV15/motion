@@ -21,7 +21,7 @@ groupsData.groups.forEach(group => {
   groupLookup[group.weekday][group.room_id][group.time] = group;
 });
 
-function generateSessions(startDate, endDate) {
+function generateSessionsScript(startDate, endDate) {
   const sessions = [];
   let date = parseISO(startDate);
   const end = parseISO(endDate);
@@ -66,7 +66,7 @@ function generateSessions(startDate, endDate) {
 }
 
 // Generate sessions for June 2025
-const sessions = generateSessions('2025-06-01', '2025-06-30');
+const sessions = generateSessionsScript('2025-06-01', '2025-06-30');
 
 // Create the sessions object
 const sessionsData = {

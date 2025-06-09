@@ -38,7 +38,7 @@ interface Group {
 
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-function generateSessions(startDate: string, endDate: string): Session[] {
+const generateSessions = (startDate: string, endDate: string): Session[] => {
   const sessions: Session[] = [];
   const start = parseISO(startDate);
   const end = parseISO(endDate);
@@ -83,6 +83,9 @@ function generateSessions(startDate: string, endDate: string): Session[] {
   }
   
   return sessions;
-}
+};
 
-module.exports = { generateSessions }; 
+// Alias for generateSessions
+const generateGroupSessions = generateSessions;
+
+module.exports = { generateSessions, generateGroupSessions }; 
