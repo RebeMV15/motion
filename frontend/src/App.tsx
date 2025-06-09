@@ -14,8 +14,21 @@ const UserManager = lazy(() => import('./pages/UserManager'))
 const SessionDetail = lazy(() => import('./pages/SessionDetail'))
 const GroupSessionDetail = lazy(() => import('./pages/GroupSessionDetail'))
 const ClientDetail = lazy(() => import('./pages/ClientDetail'))
+const TrainerDetail = lazy(() => import('./pages/TrainerDetail'))
 
 const { Header } = Layout;
+
+function LogoNav() {
+  const navigate = useNavigate();
+  return (
+    <img
+      src="/logo-motion.svg"
+      alt="Motion"
+      style={{ height: '24px', marginRight: '32px', cursor: 'pointer' }}
+      onClick={() => navigate('/')}
+    />
+  );
+}
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -116,7 +129,7 @@ function App() {
           position: 'relative'
         }}>
           <div className="flex items-center w-full">
-            <img src="/logo-motion.svg" alt="Motion" style={{ height: '24px', marginRight: '32px' }} />
+            <LogoNav />
             <Navigation />
           </div>
         </Header>
@@ -156,6 +169,10 @@ function App() {
               <Route
                 path="/client/:id"
                 element={<ClientDetail />}
+              />
+              <Route
+                path="/trainer/:id"
+                element={<TrainerDetail />}
               />
             </Routes>
           </Suspense>

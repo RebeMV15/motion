@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Card, Input, Button, Switch, DatePicker, Typography, Space, Select, Row, Col, Divider, Tag, List } from 'antd';
 import usersData from '../data/users.json';
@@ -106,6 +106,20 @@ const ClientDetail: React.FC = () => {
     }));
   };
 
+  useEffect(() => {
+    const parent = document.querySelector('.member-detail-container')?.parentElement;
+    if (parent) {
+      const prevPaddingTop = parent.style.paddingTop;
+      const prevPaddingBottom = parent.style.paddingBottom;
+      parent.style.paddingTop = '0px';
+      parent.style.paddingBottom = '0px';
+      return () => {
+        parent.style.paddingTop = prevPaddingTop;
+        parent.style.paddingBottom = prevPaddingBottom;
+      };
+    }
+  }, []);
+
   return (
     <>
       <style>{mobileStyle}</style>
@@ -113,7 +127,7 @@ const ClientDetail: React.FC = () => {
         {/* Title and Back Arrow */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 16, marginBottom: 16 }}>
           <Button type="text" icon={<ArrowLeftOutlined />} onClick={() => navigate(-1)} style={{ marginLeft: -8, marginRight: 0, padding: 0 }} />
-          <span style={{ fontWeight: 600, fontSize: 18 }}>Member details</span>
+          <span style={{ fontWeight: 600, fontSize: 18 }}>Client details</span>
         </div>
 
         {/* Member Info Card */}

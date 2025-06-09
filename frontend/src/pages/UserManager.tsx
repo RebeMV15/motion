@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { EditOutlined } from '@ant-design/icons'
+import { List, Typography, Button, Avatar } from 'antd'
 import userData from '../data/users.json'
 
 type UserType = 'trainer' | 'client'
@@ -25,8 +27,10 @@ const mockAvatars = [
   'https://randomuser.me/api/portraits/men/12.jpg',
 ]
 
+const { Text } = Typography;
+
 const UserManager: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<UserType>('trainer')
+  const [activeTab, setActiveTab] = useState<UserType>('client')
   const [trainers, setTrainers] = useState<User[]>([])
   const [clients, setClients] = useState<Client[]>([])
   const [loading, setLoading] = useState(false)
@@ -54,57 +58,49 @@ const UserManager: React.FC = () => {
     client.name.toLowerCase().includes(clientSearch.toLowerCase())
   )
 
-  const renderTrainersTable = () => (
-    <div className="overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
-          <tr>
-            <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-            <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surname</th>
-            <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
-            <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Edit</th>
-          </tr>
-        </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
-          {loading ? (
-            <tr><td colSpan={4} className="text-center py-4">Loading...</td></tr>
-          ) : error ? (
-            <tr><td colSpan={4} className="text-center py-4 text-red-500">{error}</td></tr>
-          ) : trainers.length === 0 ? (
-            <tr><td colSpan={4} className="text-center py-4">No trainers found.</td></tr>
-          ) : (
-            trainers.map((trainer) => (
-              <tr
-                key={trainer.id}
-                className="cursor-pointer hover:bg-gray-50"
-                onClick={() => navigate(`/trainers/${trainer.id}`)}
-              >
-                <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm font-medium text-gray-900">{trainer.name}</div>
-                </td>
-                <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm text-gray-900">{trainer.surname}</div>
-                </td>
-                <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm text-gray-900">{trainer.role}</div>
-                </td>
-                <td className="px-4 sm:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <button
-                    className="text-primary-600 hover:text-primary-900"
-                    onClick={e => { e.stopPropagation(); /* handle edit here */ }}
-                  >
-                    Edit
-                  </button>
-                </td>
-              </tr>
-            ))
-          )}
-        </tbody>
-      </table>
-    </div>
+  const sortedTrainers = trainers.slice().sort((a, b) => {
+    const nameA = `${a.name} ${a.surname}`.toLowerCase();
+    const nameB = `${b.name} ${b.surname}`.toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  const sortedFilteredClients = filteredClients.slice().sort((a, b) => {
+    const nameA = `${a.name} ${a.surname}`.toLowerCase();
+    const nameB = `${b.name} ${b.surname}`.toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  const renderTrainersList = () => (
+    <List
+      itemLayout="horizontal"
+      dataSource={sortedTrainers}
+      renderItem={trainer => (
+        <List.Item
+          style={{ cursor: 'pointer', paddingLeft: 16, paddingRight: 0 }}
+          onClick={() => navigate(`/trainer/${trainer.id}`)}
+          actions={[
+            <Button
+              type="text"
+              icon={<EditOutlined style={{ fontSize: 18 }} />}
+              onClick={e => {
+                e.stopPropagation();
+                // You can implement edit navigation here if needed
+              }}
+              key="edit"
+            />
+          ]}
+        >
+          <List.Item.Meta
+            avatar={<Avatar src={`/avatars/trainer-${trainer.id}.jpg`} size={32} />}
+            title={<span style={{ fontWeight: 500 }}>{trainer.name} {trainer.surname}</span>}
+            description={<Text type="secondary">{trainer.role}</Text>}
+          />
+        </List.Item>
+      )}
+    />
   )
 
-  const renderClientsTable = () => (
+  const renderClientsList = () => (
     <>
       <div className="px-4 pb-4 pt-4 flex justify-start">
         <input
@@ -115,49 +111,31 @@ const UserManager: React.FC = () => {
           className="w-full sm:w-64 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-primary-300"
         />
       </div>
-      <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-              <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surname</th>
-              <th className="px-4 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Edit</th>
-            </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            {loading ? (
-              <tr><td colSpan={3} className="text-center py-4">Loading...</td></tr>
-            ) : error ? (
-              <tr><td colSpan={3} className="text-center py-4 text-red-500">{error}</td></tr>
-            ) : filteredClients.length === 0 ? (
-              <tr><td colSpan={3} className="text-center py-4">No clients found.</td></tr>
-            ) : (
-              filteredClients.map((client) => (
-                <tr
-                  key={client.id}
-                  className="cursor-pointer hover:bg-gray-50"
-                  onClick={() => navigate(`/clients/${client.id}`)}
-                >
-                  <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
-                    <div className="text-sm font-medium text-gray-900">{client.name}</div>
-                  </td>
-                  <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
-                    <div className="text-sm text-gray-900">{client.surname}</div>
-                  </td>
-                  <td className="px-4 sm:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <button
-                      className="text-primary-600 hover:text-primary-900"
-                      onClick={e => { e.stopPropagation(); /* handle edit here */ }}
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
+      <List
+        itemLayout="horizontal"
+        dataSource={sortedFilteredClients}
+        renderItem={client => (
+          <List.Item
+            style={{ cursor: 'pointer', paddingLeft: 16, paddingRight: 0 }}
+            onClick={() => navigate(`/client/${client.id.padStart(5, '0')}`)}
+            actions={[
+              <Button
+                type="text"
+                icon={<EditOutlined style={{ fontSize: 18 }} />}
+                onClick={e => {
+                  e.stopPropagation();
+                  navigate(`/clients/${client.id}/edit`);
+                }}
+                key="edit"
+              />
+            ]}
+          >
+            <List.Item.Meta
+              title={<span style={{ fontWeight: 500 }}>{client.name} {client.surname}</span>}
+            />
+          </List.Item>
+        )}
+      />
     </>
   )
 
@@ -174,16 +152,6 @@ const UserManager: React.FC = () => {
         <div className="border-b border-gray-200">
           <nav className="flex -mb-px">
             <button
-              onClick={() => setActiveTab('trainer')}
-              className={`py-4 px-4 sm:px-6 text-sm font-medium ${
-                activeTab === 'trainer'
-                  ? 'border-b-2 border-primary-500 text-primary-600'
-                  : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
-              }`}
-            >
-              Trainers
-            </button>
-            <button
               onClick={() => setActiveTab('client')}
               className={`py-4 px-4 sm:px-6 text-sm font-medium ${
                 activeTab === 'client'
@@ -193,11 +161,21 @@ const UserManager: React.FC = () => {
             >
               Clients
             </button>
+            <button
+              onClick={() => setActiveTab('trainer')}
+              className={`py-4 px-4 sm:px-6 text-sm font-medium ${
+                activeTab === 'trainer'
+                  ? 'border-b-2 border-primary-500 text-primary-600'
+                  : 'text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              }`}
+            >
+              Trainers
+            </button>
           </nav>
         </div>
 
-        {activeTab === 'trainer' && renderTrainersTable()}
-        {activeTab === 'client' && renderClientsTable()}
+        {activeTab === 'trainer' && renderTrainersList()}
+        {activeTab === 'client' && renderClientsList()}
       </div>
     </div>
   )
