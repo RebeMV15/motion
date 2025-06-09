@@ -14,7 +14,7 @@ export interface Session {
   id: string;
   date: string;
   time: string;
-  weekday?: string;
+  weekday: string;
   room: {
     name: string;
   };

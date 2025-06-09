@@ -74,7 +74,7 @@ const GroupConfigurator: React.FC = () => {
         duration: 1,
         room: session.room.name,
         date: dateObj,
-        weekday: session.weekday,
+        weekday: session.weekday ?? '',
         level: session.group.level,
         capacity: typeOfGroupCapacity[typeOfGroupId] ?? 0,
         attendees: groupAttendanceCount[groupId] ?? 0

@@ -18,6 +18,7 @@ type Session = {
   duration: number // in hours
   room: string
   date: Date
+  weekday: string
   level: 1 | 2 | 3 // new
   get capacity(): number
   get attendees(): number
@@ -78,6 +79,7 @@ const DailySchedule: React.FC = () => {
         duration: 1,
         room: session.room.name,
         date: dateObj,
+        weekday: session.weekday ?? '',
         level: session.group.level,
         capacity: typeOfGroupCapacity[typeOfGroupId] ?? 0,
         attendees: groupAttendanceCount[groupId] ?? 0
