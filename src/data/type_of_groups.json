@@ -1,0 +1,24 @@
+{
+  "type_of_groups": [
+    {
+      "id": 1,
+      "type_of_group": "Group of 8",
+      "capacity": 8
+    },
+    {
+      "id": 2,
+      "type_of_group": "Group of 5",
+      "capacity": 5
+    },
+    {
+      "id": 3,
+      "type_of_group": "Personal training",
+      "capacity": 1
+    },
+    {
+      "id": 4,
+      "type_of_group": "Learning",
+      "capacity": 0
+    }
+  ]
+} 
